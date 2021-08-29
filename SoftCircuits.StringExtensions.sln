@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftCircuits.StringExtensions", "SoftCircuits.StringExtensions\SoftCircuits.StringExtensions.csproj", "{0215E9CE-AA7F-4E40-BA75-152E6DFA657B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringExtensionTests", "StringExtensionTests\StringExtensionTests.csproj", "{B3BDF113-511B-4EF2-AE60-403181EB05FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0215E9CE-AA7F-4E40-BA75-152E6DFA657B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0215E9CE-AA7F-4E40-BA75-152E6DFA657B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0215E9CE-AA7F-4E40-BA75-152E6DFA657B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0215E9CE-AA7F-4E40-BA75-152E6DFA657B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BDF113-511B-4EF2-AE60-403181EB05FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BDF113-511B-4EF2-AE60-403181EB05FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BDF113-511B-4EF2-AE60-403181EB05FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BDF113-511B-4EF2-AE60-403181EB05FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF8EF0C2-AF6F-4924-9792-BE1DD83C1983}
+	EndGlobalSection
+EndGlobal
