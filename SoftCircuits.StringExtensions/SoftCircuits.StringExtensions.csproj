@@ -11,9 +11,12 @@
     <PackageTags>parse string text</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Initiali release</PackageReleaseNotes>
+    <PackageReleaseNotes>Minor tweaks to package file.</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/SoftCircuits/SoftCircuits.StringExtensions</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SoftCircuits/SoftCircuits.StringExtensions</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
