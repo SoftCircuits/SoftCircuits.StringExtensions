@@ -11,49 +11,56 @@ Install-Package SoftCircuits.StringExtensions
 Class library provides extension methods that augment the string class. Extension methods add methods to the existing string class and include methods to normalize whitespace, filter and sort characters, parse tokens, truncate to a given length, many options to set case, and static methods that convert numbers to strings, and much more.
 
 ### Reference
-
     public static string EmptyIfNull(this string? s);
 
 
  Returns this string, or an empty string if this string is null.
  
+
     public static string? NullIfEmpty(this string? s);
 
 
  Returns this string, or null if this string is empty.
  
+
     public static string EmptyIfNullOrWhiteSpace(this string? s);
 
 
  Returns this string, or an empty string if this string is null or contains only whitespace.
  
+
     public static string? NullIfEmptyOrWhiteSpace(this string? s);
 
 
  Returns this string, or null if this string is null or contains only whitespace.
  
+
     public static string NormalizeWhiteSpace(this string s);
 
 
  Returns a copy of this tring with all whitespace sequences replaced with a single space
  character and all leading and trailing whitespace removed.
  
+
 *s*
 This string.
 
 Returns
 The modified string.
+
     public static int CountWords(this string s);
 
 
  Counts the number of words in this string. Words are separated by one or more whitespace
  character.
  
+
     public static string Reverse(this string s);
 
 
  Returns a copy of this string with the characters in reverse order.
  
+
 *s*
 This string.
 
@@ -62,6 +69,7 @@ This string.
 
  Returns a string that includes exactly one occurrence of each character from this string.
  
+
 *s*
 This string.
 
@@ -74,6 +82,7 @@ If true, upper and lower case characters are considered equal.
  Returns a string that contains a single occurrence of each character that appears either in this string or
  `unionChars`.
  
+
 *s*
 This string.
 
@@ -89,6 +98,7 @@ If true, lower and upper case characters are considered equal.
  Returns a string that contains a single occurrence of each character that appears either in this string or
  `unionChars`.
  
+
 *s*
 This string.
 
@@ -104,6 +114,7 @@ If true, lower and upper case characters are considered equal.
  Returns a string that contains a single occurrence of each character that appears in both this string and
  `intersectChars`.
  
+
 *s*
 This string.
 
@@ -119,6 +130,7 @@ If true, lower and upper case characters are considered equal.
  Returns a string that contains a single occurrence of each character that appears in both this string and
  `intersectChars`.
  
+
 *intersectChars*
 String of characters to union with this string.
 
@@ -131,6 +143,7 @@ If true, lower and upper case characters are considered equal.
  Returns a string with a single occurrence of each character from the original string except those characters
  found in `exceptChars`.
  
+
 *s*
 This string.
 
@@ -146,6 +159,7 @@ If true, lower and upper case characters are considered equal.
  Returns a string with a single occurrence of each character from the original string except those characters
  found in `exceptChars`.
  
+
 *s*
 This string.
 
@@ -160,6 +174,7 @@ If true, lower and upper case characters are considered equal.
 
  Returns a copy of this string with the characters sorted.
  
+
 *s*
 This string.
 
@@ -171,6 +186,7 @@ If true, lower and upper case characters are considered equal.
 
  Returns true if this string contains any of the characters in `findChars`.
  
+
 *findChars*
 String of characters to find.
 
@@ -179,16 +195,19 @@ String of characters to find.
 
  Returns a string with spaces inserted between words indicated by camel case.
  
+
 *s*
 
 
 Returns
 The converted string.
+
     //public static string Filter(this string s, Func<char, bool> predicate) //;
 
 
  Creates a string... TODO:
  
+
 *s*
 
 
@@ -200,6 +219,7 @@ The converted string.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -211,6 +231,7 @@ Specifies how to handle the decimal portion.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -222,6 +243,7 @@ Specifies how to handle the decimal portion.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -233,6 +255,7 @@ Specifies how to handle the decimal portion.
 
  
  
+
 *value*
 
 
@@ -241,11 +264,13 @@ Specifies how to handle the decimal portion.
 
  
  
+
     public static string FromNumber(int value);
 
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -254,6 +279,7 @@ Value to convert.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -262,6 +288,7 @@ Value to convert.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -273,6 +300,7 @@ Variable set to true if the value is negative.
 
  Converts the given number to a string.
  
+
 *value*
 Value to convert.
 
@@ -284,11 +312,13 @@ Variable set to true if the value is negative.
 
  Converts a integer value to a string.
  
+
     public static string SetCase(this string s, CaseType caseType);
 
 
  Returns a copy of this string with the case changed according to `caseType`.
  
+
 *s*
 This string.
 
@@ -297,26 +327,31 @@ This string.
 
 Returns
 The modified string.
+
     private static string SetCapitalizeFirstCharacter(string s);
 
 
  Converts the first character in `s` to upper case.
  
+
     private static string SetSentenceCase(string s);
 
 
  Converts a string to sentence case.
  
+
     private static string SetTitleCase(string s);
 
 
  Converts a string to title case.
  
+
     public static List<string> Tokenize(this string s, Func<char, bool> predicate);
 
 
  Splits a string into a list of string tokens.
  
+
 *s*
 This string.
 
@@ -328,6 +363,7 @@ Delegate to return true for characters that delimit tokens.
 
  Splits a string into a list of string tokens.
  
+
 *s*
 This string.
 
@@ -342,6 +378,7 @@ If true, upper and lower case characters are considered equal.
 
  Returns the next token from this string.
  
+
 *s*
 This string.
 
@@ -353,11 +390,13 @@ Current position within the string, updated The starting position. Is updated
 
 Returns
 The next token or null if there are no more tokens.
+
     public static string? GetNextToken(this string s, string delimiterChars, ref int pos, bool ignoreCase;
 
 
  Returns the next token from this string.
  
+
 *s*
 This string.
 
@@ -372,11 +411,13 @@ String that contains delimiting characters.
 
 Returns
 The next token or null if there are no more tokens.
+
     public static string Truncate(this string s, int maxLength, bool smartTrim;
 
 
  Returns a copy of this string truncated to the specified length.
  
+
 *maxLength*
 Maximum string length.
 
