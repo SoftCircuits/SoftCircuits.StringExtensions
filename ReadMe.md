@@ -379,4 +379,3 @@ If true, trailing partial words and whitespace are removed, unless
 If true, `"..."` is appended to the truncated
  string. The string is further truncated to make room for the ellipsis.
  
-
