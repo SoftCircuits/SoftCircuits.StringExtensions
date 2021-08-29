@@ -11,6 +11,7 @@ Install-Package SoftCircuits.StringExtensions
 Class library provides extension methods that augment the string class. Extension methods add methods to the existing string class and include methods to normalize whitespace, filter and sort characters, parse tokens, truncate to a given length, many options to set case, and static methods that convert numbers to strings, and much more.
 
 ### Reference
+
     public static string EmptyIfNull(this string? s);
 
 
@@ -202,18 +203,6 @@ String of characters to find.
 Returns
 The converted string.
 
-    //public static string Filter(this string s, Func<char, bool> predicate) //;
-
-
- Creates a string... TODO:
- 
-
-*s*
-
-
-*predicate*
-
-
     public static string FromNumber(float value, DecimalFormat decimalFormat);
 
 
@@ -249,21 +238,6 @@ Value to convert.
 
 *decimalFormat*
 Specifies how to handle the decimal portion.
-
-    private static string DecimalToFraction(decimal value);
-
-
- 
- 
-
-*value*
-
-
-    private static long GetGreatestCommonDivisor(long a, long b);
-
-
- 
- 
 
     public static string FromNumber(int value);
 
@@ -307,12 +281,6 @@ Value to convert.
 *isNegative*
 Variable set to true if the value is negative.
 
-    private static void FormatNumber(StringBuilder builder, string digits);
-
-
- Converts a integer value to a string.
- 
-
     public static string SetCase(this string s, CaseType caseType);
 
 
@@ -327,24 +295,6 @@ This string.
 
 Returns
 The modified string.
-
-    private static string SetCapitalizeFirstCharacter(string s);
-
-
- Converts the first character in `s` to upper case.
- 
-
-    private static string SetSentenceCase(string s);
-
-
- Converts a string to sentence case.
- 
-
-    private static string SetTitleCase(string s);
-
-
- Converts a string to title case.
- 
 
     public static List<string> Tokenize(this string s, Func<char, bool> predicate);
 
