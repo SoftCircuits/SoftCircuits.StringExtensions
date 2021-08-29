@@ -65,7 +65,7 @@ The modified string.
 *s*
 This string.
 
-    public static string Distinct(this string s, bool ignoreCase;
+    public static string Distinct(this string s, bool ignoreCase = false);
 
 
  Returns a string that includes exactly one occurrence of each character from this string.
@@ -77,7 +77,7 @@ This string.
 *ignoreCase*
 If true, upper and lower case characters are considered equal.
 
-    public static string Union(this string s, IEnumerable<char> unionChars, bool ignoreCase;
+    public static string Union(this string s, IEnumerable<char> unionChars, bool ignoreCase = false);
 
 
  Returns a string that contains a single occurrence of each character that appears either in this string or
@@ -93,7 +93,7 @@ Collection of characters to union with this string.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Union(this string s, string unionChars, bool ignoreCase;
+    public static string Union(this string s, string unionChars, bool ignoreCase = false);
 
 
  Returns a string that contains a single occurrence of each character that appears either in this string or
@@ -109,7 +109,7 @@ String of characters to union with this string.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Intersect(this string s, IEnumerable<char> intersectChars, bool ignoreCase;
+    public static string Intersect(this string s, IEnumerable<char> intersectChars, bool ignoreCase = false);
 
 
  Returns a string that contains a single occurrence of each character that appears in both this string and
@@ -125,7 +125,7 @@ Collection of characters to intersect with this string.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Intersect(this string s, string intersectChars, bool ignoreCase;
+    public static string Intersect(this string s, string intersectChars, bool ignoreCase = false);
 
 
  Returns a string that contains a single occurrence of each character that appears in both this string and
@@ -138,7 +138,7 @@ String of characters to union with this string.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Except(this string s, IEnumerable<char> exceptChars, bool ignoreCase;
+    public static string Except(this string s, IEnumerable<char> exceptChars, bool ignoreCase = false);
 
 
  Returns a string with a single occurrence of each character from the original string except those characters
@@ -154,7 +154,7 @@ Collection of characters to exclude from the result.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Except(this string s, string exceptChars, bool ignoreCase;
+    public static string Except(this string s, string exceptChars, bool ignoreCase = false);
 
 
  Returns a string with a single occurrence of each character from the original string except those characters
@@ -170,7 +170,7 @@ String of characters to exclude from the result.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static string Sort(this string s, bool ignoreCase;
+    public static string Sort(this string s, bool ignoreCase = false);
 
 
  Returns a copy of this string with the characters sorted.
@@ -182,7 +182,7 @@ This string.
 *ignoreCase*
 If true, lower and upper case characters are considered equal.
 
-    public static bool ContainsAny(this string s, string findChars, bool ignoreCase;
+    public static bool ContainsAny(this string s, string findChars, bool ignoreCase = false);
 
 
  Returns true if this string contains any of the characters in `findChars`.
@@ -308,7 +308,7 @@ This string.
 *predicate*
 Delegate to return true for characters that delimit tokens.
 
-    public static List<string> Tokenize(this string s, string delimiterChars, bool ignoreCase;
+    public static List<string> Tokenize(this string s, string delimiterChars, bool ignoreCase = false);
 
 
  Splits a string into a list of string tokens.
@@ -341,7 +341,7 @@ Current position within the string, updated The starting position. Is updated
 Returns
 The next token or null if there are no more tokens.
 
-    public static string? GetNextToken(this string s, string delimiterChars, ref int pos, bool ignoreCase;
+    public static string? GetNextToken(this string s, string delimiterChars, ref int pos, bool ignoreCase = false);
 
 
  Returns the next token from this string.
@@ -362,7 +362,7 @@ String that contains delimiting characters.
 Returns
 The next token or null if there are no more tokens.
 
-    public static string Truncate(this string s, int maxLength, bool smartTrim;
+    public static string Truncate(this string s, int maxLength, bool smartTrim = true, bool appendEllipsis = true);
 
 
  Returns a copy of this string truncated to the specified length.
