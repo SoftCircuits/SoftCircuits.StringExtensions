@@ -32,7 +32,7 @@ Class library provides extension methods that augment the string class. Extensio
 
  Returns a copy of this tring with all whitespace sequences replaced with a single space character and all leading and trailing whitespace removed. 
 
-*s*
+`s`
 
 This string.
 
@@ -48,7 +48,7 @@ The modified string.
 
  Returns a copy of this string with the characters in reverse order. 
 
-*s*
+`s`
 
 This string.
 
@@ -56,11 +56,11 @@ This string.
 
  Returns a string that includes exactly one occurrence of each character from this string. 
 
-*s*
+`s`
 
 This string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, upper and lower case characters are considered equal.
 
@@ -68,15 +68,15 @@ If true, upper and lower case characters are considered equal.
 
  Returns a string that contains a single occurrence of each character that appears either in this string or `unionChars`. 
 
-*s*
+`s`
 
 This string.
 
-*unionChars*
+`unionChars`
 
 Collection of characters to union with this string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -84,15 +84,15 @@ If true, lower and upper case characters are considered equal.
 
  Returns a string that contains a single occurrence of each character that appears either in this string or `unionChars`. 
 
-*s*
+`s`
 
 This string.
 
-*unionChars*
+`unionChars`
 
 String of characters to union with this string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -100,15 +100,15 @@ If true, lower and upper case characters are considered equal.
 
  Returns a string that contains a single occurrence of each character that appears in both this string and `intersectChars`. 
 
-*s*
+`s`
 
 This string.
 
-*intersectChars*
+`intersectChars`
 
 Collection of characters to intersect with this string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -116,11 +116,11 @@ If true, lower and upper case characters are considered equal.
 
  Returns a string that contains a single occurrence of each character that appears in both this string and `intersectChars`. 
 
-*intersectChars*
+`intersectChars`
 
 String of characters to union with this string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -128,15 +128,15 @@ If true, lower and upper case characters are considered equal.
 
  Returns a string with a single occurrence of each character from the original string except those characters found in `exceptChars`. 
 
-*s*
+`s`
 
 This string.
 
-*exceptChars*
+`exceptChars`
 
 Collection of characters to exclude from the result.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -144,15 +144,15 @@ If true, lower and upper case characters are considered equal.
 
  Returns a string with a single occurrence of each character from the original string except those characters found in `exceptChars`. 
 
-*s*
+`s`
 
 This string.
 
-*exceptChars*
+`exceptChars`
 
 String of characters to exclude from the result.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -160,11 +160,11 @@ If true, lower and upper case characters are considered equal.
 
  Returns a copy of this string with the characters sorted. 
 
-*s*
+`s`
 
 This string.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, lower and upper case characters are considered equal.
 
@@ -172,7 +172,7 @@ If true, lower and upper case characters are considered equal.
 
  Returns true if this string contains any of the characters in `findChars`. 
 
-*findChars*
+`findChars`
 
 String of characters to find.
 
@@ -180,7 +180,7 @@ String of characters to find.
 
  Returns a string with spaces inserted between words indicated by camel case. 
 
-*s*
+`s`
 
 
 
@@ -188,15 +188,43 @@ Returns
 
 The converted string.
 
+    public static bool IncludesLowerCase(StringBuilder builder, int start, int end);
+
+ Adds two integers and returns the result. 
+
+`left`
+
+ The left operand of the addition. 
+
+`right`
+
+ The right operand of the addition. 
+
+Returns
+
+ The sum of two integers. 
+
+Exceptions
+
+`System.OverflowException`
+
+
+
+See Also
+
+`ExampleClass.Label`
+
+
+
     public static string FromNumber(float value, DecimalFormat decimalFormat);
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
-*decimalFormat*
+`decimalFormat`
 
 Specifies how to handle the decimal portion.
 
@@ -204,11 +232,11 @@ Specifies how to handle the decimal portion.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
-*decimalFormat*
+`decimalFormat`
 
 Specifies how to handle the decimal portion.
 
@@ -216,11 +244,11 @@ Specifies how to handle the decimal portion.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
-*decimalFormat*
+`decimalFormat`
 
 Specifies how to handle the decimal portion.
 
@@ -228,7 +256,7 @@ Specifies how to handle the decimal portion.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
@@ -236,7 +264,7 @@ Value to convert.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
@@ -244,11 +272,11 @@ Value to convert.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
-*isNegative*
+`isNegative`
 
 Variable set to true if the value is negative.
 
@@ -256,11 +284,11 @@ Variable set to true if the value is negative.
 
  Converts the given number to a string. 
 
-*value*
+`value`
 
 Value to convert.
 
-*isNegative*
+`isNegative`
 
 Variable set to true if the value is negative.
 
@@ -268,11 +296,11 @@ Variable set to true if the value is negative.
 
  Returns a copy of this string with the case changed according to `caseType`. 
 
-*s*
+`s`
 
 This string.
 
-*caseType*
+`caseType`
 
 
 
@@ -284,11 +312,11 @@ The modified string.
 
  Splits a string into a list of string tokens. 
 
-*s*
+`s`
 
 This string.
 
-*predicate*
+`predicate`
 
 Delegate to return true for characters that delimit tokens.
 
@@ -296,15 +324,15 @@ Delegate to return true for characters that delimit tokens.
 
  Splits a string into a list of string tokens. 
 
-*s*
+`s`
 
 This string.
 
-*delimiterChars*
+`delimiterChars`
 
 String that contains the characters that delimit tokens.
 
-*ignoreCase*
+`ignoreCase`
 
 If true, upper and lower case characters are considered equal.
 
@@ -312,15 +340,15 @@ If true, upper and lower case characters are considered equal.
 
  Returns the next token from this string. 
 
-*s*
+`s`
 
 This string.
 
-*predicate*
+`predicate`
 
 Delegate to return true for delimiting characters.
 
-*pos*
+`pos`
 
 Current position within the string, updated The starting position. Is updated
 
@@ -332,19 +360,19 @@ The next token or null if there are no more tokens.
 
  Returns the next token from this string. 
 
-*s*
+`s`
 
 This string.
 
-*delimiterChars*
+`delimiterChars`
 
 String that contains delimiting characters.
 
-*pos*
+`pos`
 
 
 
-*ignoreCase*
+`ignoreCase`
 
 
 
@@ -356,15 +384,15 @@ The next token or null if there are no more tokens.
 
  Returns a copy of this string truncated to the specified length. 
 
-*maxLength*
+`maxLength`
 
 Maximum string length.
 
-*smartTrim*
+`smartTrim`
 
 If true, trailing partial words and whitespace are removed, unless there is not room for at least one whole word.
 
-*appendEllipsis*
+`appendEllipsis`
 
 If true, `"..."` is appended to the truncated string. The string is further truncated to make room for the ellipsis. 
 
