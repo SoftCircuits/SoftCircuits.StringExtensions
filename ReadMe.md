@@ -6,6 +6,10 @@
 Install-Package SoftCircuits.StringExtensions
 ```
 
+## IMPORTANT
+
+**This repository has been deprecated. Please use SoftCircuits.Wordify instead.**
+
 ## Overview
 
 Class library provides extension methods that augment the string class. Extension methods add methods to the existing string class and include methods to normalize whitespace, filter and sort characters, parse tokens, truncate to a given length, many options to set case, and static methods that convert numbers to strings, and much more.
